@@ -1,0 +1,51 @@
+.vvc_parent_div{
+    height: 10rem;
+    width: 50%;
+    border: 1px solid teal;
+}
+.vvc_child_div{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 1px solid rgb(128, 66, 0);
+    text-align: center;
+    /**
+     Or 
+        Remove position: relative;
+        remove top: 50%;  we dont need it now
+        make transform: translateY(100%);
+    */
+}
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+  
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  
